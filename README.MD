@@ -1,2 +1,2 @@
 ## Tēmas
-1.,2. Pitona pamati
+1.,2.,3. Pitona pamati
