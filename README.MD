@@ -1,5 +1,6 @@
-## Tēmas
+# 11a klase - Programmēšana I - 2025./2026. māc. gads
 
+## Tēmas
 ### 1. Semestris
 1.,2.,3.,4. - Pitona pamati  
 5. Kontroldarbs  
