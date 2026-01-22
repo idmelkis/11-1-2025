@@ -12,4 +12,4 @@ drawio failus var atvērt izmantojot http://draw.io vietni vai Visual Studio Cod
 10. Kontroldabs
 
 ### 2. Semestris
-12. - Objektorientētā programmēšana
+11., 12. - Objektorientētā programmēšana
