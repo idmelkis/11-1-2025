@@ -13,4 +13,4 @@ drawio failus var atvērt izmantojot http://draw.io vietni vai Visual Studio Cod
 
 ### 2. Semestris
 11., 12. - Objektorientētā programmēšana  (abstrahēšana)  
-13. - Objektorientētā programmēšana  (kodēšana)
+13., 14. - Objektorientētā programmēšana  (kodēšana)

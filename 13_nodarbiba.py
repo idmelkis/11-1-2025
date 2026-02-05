@@ -85,4 +85,31 @@ print(bibliotēka_1)
 print(bibliotēka_2)
 print(bibliotēka_2.__dict__)
 
-# Uzdevums: Izveidot klasi no diagrammas (13_nodarbiba.drawio) =>
+# Uzdevums: Izveidot klasi no diagrammas (13_nodarbiba.drawio)
+class Priekšmets:
+    nosaukums :str
+    skolotajaVards :str
+    skolenuSkaits :int = 0
+    skoleni :list[str]
+    nodarbibuDatumi: list[str]
+    def __init__(self, nosaukums, skolotajaVards):
+        self.skoleni = []
+        self.nodarbibuDatumi = []
+        self.nosaukums = nosaukums
+        self.skolotajaVards = skolotajaVards
+    def izveidotNodarbibu(self, datums):
+        self.nodarbibuDatumi.append(datums)
+    def pievienotSkolenu(self, vards):
+        self.skoleni.append(vards)
+        self.skolenuSkaits = len(self.skoleni)
+    def izvaditSkolenus(self):
+        for skolens in self.skoleni:
+            print(skolens)
+    # Vajadzīga, lai varētu veikt print(objekts)
+    def __str__(self):
+        return f"Priekšmets: {self.nosaukums} ({self.skolotajaVards})"
+
+obj = Priekšmets("Programmēšana I", "Ingmārs")
+obj.pievienotSkolenu("Jānis")
+obj.izvaditSkolenus()
+print(obj) # vajag __str__ funkciju!
