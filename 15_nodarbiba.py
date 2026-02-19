@@ -93,4 +93,26 @@ print(auto_1.pārvadājamo_skaits)
 #* Izveidot grafiku un apakšklasi "kaķis". Funkcija skaņa (izvada "Ņaud")
 # Izveidot objektus sunim un kaķim - izsaukt skaņas funkciju
 class Dzīvnieks:
-    pass
+    vārds :str
+    kājuSk :int
+    def __init__(self, vārds):
+        self.kājuSk = 0
+        self.vārds = vārds
+    def skaņa(self):
+        print("Abstrakta klase - nav skaņas")
+class Suns(Dzīvnieks):
+    def __init__(self, vārds):
+        super().__init__(vārds)
+        self.kājuSk = 4
+    def skaņa(self):
+        print("Woof!")
+class Kaķis(Dzīvnieks):
+    def __init__(self, vārds):
+        super().__init__(vārds)
+        self.kājuSk = 4
+    def skaņa(self):
+        print("Meow!")
+s1 = Suns("AAA")
+s1.skaņa()
+s2 = Kaķis("AAA")
+s2.skaņa()
