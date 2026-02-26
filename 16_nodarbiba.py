@@ -68,8 +68,35 @@ print(kkonts.lidzekli)
 
 # Izveidot klasi "Akcija", kas glabā informāciju par akcijām
 # Nosaukums, & nominālvērtība
+class Akcija:
+    nosaukums: str
+    nominālvērtība: float
+    def __init__(self, nosaukums, nominālvērtība):
+        self.nosaukums = nosaukums
+        self.nominālvērtība = nominālvērtība
+
 # Izveidot klasi AkcijuKonts, kas glabā informāciju par lietotāja naudas
 # (mantot no BankasKonts) līdzekļiem un akciju līdzekļiem.
-# Realizēt akciju pievienošanas un izņemšanas funkcijas.
-# Izvadot objektu (print(obj)) vajadzētu izvadīt informāciju par lietotāja
-# naudas atlikumu, akciju skaitu un to vērtību vērtību.
+class AkcijuKonts(BankasKonts):
+    akcijas: list[Akcija]
+    def __init__(self):
+        super().__init__()
+        self.akcijas = []
+    # Realizēt akciju pievienošanas un izņemšanas funkcijas.
+    # Izvadot objektu (print(obj)) vajadzētu izvadīt informāciju par lietotāja -- __str__
+    # naudas atlikumu, akciju skaitu un to vērtību vērtību.
+    def pievienotAkc(self, akcija):
+        self.akcijas.append(akcija)
+    def iznemtAkc(self, akcija):
+        self.akcijas.remove(akcija)
+    def __str__(self):
+        vertiba = 0.0
+        for iii in self.akcijas:
+            vertiba += iii.nominālvērtība
+        return f"Līdzekļi: {self.lidzekli}, Akciju skaits: {len(self.akcijas)}, Akc. Vērtība: {vertiba}"
+akc = AkcijuKonts()
+akc.ieskaitit(200)
+akc.pievienotAkc(Akcija("AAA", 100))
+otrAkc = Akcija("AAA", 100)
+akc.pievienotAkc(otrAkc)
+print(akc)
