@@ -17,4 +17,5 @@ drawio failus var atvērt izmantojot http://draw.io vietni vai Visual Studio Cod
 15., 16. - Objektorientētā programmēšana (mantošana)  
 17. - Objektorientētā programmēšana  
 18. - Kontroldarbs  
-19., 20., 21. - Faili  
+19., 20. - Faili (failu atvēršana)  
+21., 22. - Faili (strukturētu failu formāti - JSON, csv)  
