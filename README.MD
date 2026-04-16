@@ -19,3 +19,4 @@ drawio failus var atvērt izmantojot http://draw.io vietni vai Visual Studio Cod
 18. - Kontroldarbs  
 19., 20. - Faili (failu atvēršana)  
 21., 22. - Faili (strukturētu failu formāti - JSON, csv)  
+23. - Faili (mapes)
